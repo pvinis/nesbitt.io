@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-21T08:41:32Z",
-  "cutoff": "2026-09-21T08:41:26Z",
+  "generated": "2026-10-21T14:32:18Z",
+  "cutoff": "2026-09-21T14:32:12Z",
   "feed_count": 104,
-  "item_count": 305,
+  "item_count": 311,
   "categories": [
     ".NET",
     "C/C++",
@@ -22,6 +22,94 @@
     "System"
   ],
   "items": [
+    {
+      "title": "v1.13.2",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
+      "published": "2026-10-21T13:26:14Z",
+      "preview": "1.13.2",
+      "source": "OpenTofu releases",
+      "category": "Infrastructure as Code"
+    },
+    {
+      "title": "v1.12.9",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.9",
+      "published": "2026-10-21T13:25:22Z",
+      "preview": "SECURITY ADVISORIES: Filter out compromised intermediate certificates ( #4751 )",
+      "source": "OpenTofu releases",
+      "category": "Infrastructure as Code"
+    },
+    {
+      "title": "cabal-head",
+      "url": "https://github.com/haskell/cabal/releases/tag/cabal-head",
+      "published": "2026-10-21T13:20:28Z",
+      "preview": "No release body provided.",
+      "source": "Cabal releases",
+      "category": "Registries"
+    },
+    {
+      "title": "44.175.2",
+      "url": "https://github.com/renovatebot/renovate/releases/tag/44.175.2",
+      "published": "2026-10-21T13:02:39Z",
+      "preview": "44.175.2 (2026-10-21) Bug Fixes manager/kustomize: handle helm charts without repo ( #47255 ) ( 06d7f77 ) manager/npm: omit unresolved npmrc from extracted package files ( #47258 ) ( 25d7295 ) workers: keep absent registry URLs absent when detaching credentials ( #47256 ) ( 571a269 )",
+      "source": "Renovate releases",
+      "category": "Infrastructure"
+    },
+    {
+      "title": "26.9.4",
+      "url": "https://github.com/conda/conda/releases/tag/26.9.4",
+      "published": "2026-10-21T12:09:34Z",
+      "preview": "Bug fixes Require certifi >=2026.10.19 and ca-certificates >=2026.10.19 to update the packaged CA bundles following the eMudhra intermediate CA compromise. ( #16880 via #16881 ) Contributors @jezdez Full Changelog : 26.9.3...26.9.4",
+      "source": "Conda releases",
+      "category": "Multi-language"
+    },
+    {
+      "title": "44.175.1",
+      "url": "https://github.com/renovatebot/renovate/releases/tag/44.175.1",
+      "published": "2026-10-21T11:58:01Z",
+      "preview": "44.175.1 (2026-10-21) Bug Fixes config/validation: remove custom validation for allowedValues ( #43833 ) ( e6cdac8 ) config/validation: validate allowedValues for arrays ( #39076 ) ( e5ae141 ) config/validation: validate customDatasources generically ( #47195 ) ( b4de4ca ) config/validation: validate the entries of arrays of strings ( #47194 ) ( e49ca6a ) config: document all valid customDatasources[].format s ( #47204 ) ( a19c6bc ) workers/repository/init: massage inherited config before validating ( #47201 ) ( 2a3a481 ) workers/repository/init: massage static repo config before validating ( ",
+      "source": "Renovate releases",
+      "category": "Infrastructure"
+    },
+    {
+      "title": "v2.9.8: 2.9.8 (#37052)",
+      "url": "https://github.com/denoland/deno/releases/tag/v2.9.8",
+      "published": "2026-10-21T11:47:21Z",
+      "preview": "Bumped versions for 2.9.8 Co-authored-by: bartlomieju bartlomieju@users.noreply.github.com Co-authored-by: Bartek Iwańczuk biwanczuk@gmail.com",
+      "source": "Deno releases",
+      "category": "JavaScript"
+    },
+    {
+      "title": "pnpr 0.1.0-alpha.16",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.16",
+      "published": "2026-10-21T11:17:18Z",
+      "preview": "pnpr 0.1.0-alpha.16 serves every ecosystem under its own URL prefix, moves hosted storage to a new layout upgraded with pnpr upgrade-storage , and replaces artifacts.compilerCaches and pipeline.workspaces with artifacts.orgs . It also adds tar registries, zstd metadata and tarball compression, npm audit and provenance endpoints, Prometheus metrics, and pnpr maintenance commands. Minor Changes pnpr now serves npm under /npm/ even when npm is the only ecosystem it serves. The npm registry URL is https://<pnpr>/npm/ , and a named registry is at https://<pnpr>/npm/~<name>/ . Cargo, Python, and con",
+      "source": "pnpm releases",
+      "category": "JavaScript"
+    },
+    {
+      "title": "pnpm 11.28.7",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v11.28.7",
+      "published": "2026-10-21T11:17:06Z",
+      "preview": "This release rejects registry metadata that names a different package than the one requested, applies trustPolicy to the pnpm version a project pins, and caps unpacked package size with maxTarballUnpackedSize . It also removes support for registry revisions, fixes verifyDepsBeforeRun after filtered installs, and finishes commands with their own exit code when a pipe reader exits early. Patch Changes Security pnpm now fails with ERR_PNPM_REGISTRY_NAME_MISMATCH if a registry returns metadata for a package other than the one requested. Before, pnpm installed the package under the name in the meta",
+      "source": "pnpm releases",
+      "category": "JavaScript"
+    },
+    {
+      "title": "pnpm 12.15",
+      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.15.0",
+      "published": "2026-10-21T11:16:52Z",
+      "preview": "This release lets pnpm-workspace.yaml delegate settings to other files and config dependencies with include , adds lockfile.integrityTarget: tar and tar-registry support, accepts zstd-compressed registry responses, and honors SOURCE_DATE_EPOCH in pnpm deploy and pnpm install . It also rejects registry metadata that names a different package than the one requested and speeds up workspace installs and macOS file linking. Minor Changes pnpm-workspace.yaml can now delegate settings to other YAML files and to config dependencies through a new include field. Each source may define only the settings ",
+      "source": "pnpm releases",
+      "category": "JavaScript"
+    },
+    {
+      "title": "swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-19-a",
+      "url": "https://github.com/swiftlang/swift-package-manager/releases/tag/swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-19-a",
+      "published": "2026-10-21T08:44:25Z",
+      "preview": "Tag build swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-19-a",
+      "source": "Swift Package Manager releases",
+      "category": "Registries"
+    },
     {
       "title": "v0.82.1",
       "url": "https://github.com/prefix-dev/pixi/releases/tag/v0.82.1",
@@ -69,6 +157,22 @@
       "preview": "bootstrap.user.login_shell now accepts a shell name such as fish instead of a full path. [doctor.checks] can use templates, and vfox backend plugins get their own cache directory. This release also fixes PATH handling in zsh setups that deduplicate PATH, stale task cache hits, a pipx interpreter mix-up on macOS, and removes trust in the compromised eMudhra CA certificates. It also includes the changes prepared for 2026.10.16, which was tagged but never published: relative and templated write_targets paths, version aliases from vfox backend plugins, keyring passwords for private PyPI indexes, v",
       "source": "mise releases",
       "category": "Multi-language"
+    },
+    {
+      "title": "Help set Go's priorities for next year",
+      "url": "https://go.dev/blog/survey2026-announce",
+      "published": "2026-10-21T00:00:00Z",
+      "preview": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3.",
+      "source": "Go Blog",
+      "category": "Go"
+    },
+    {
+      "title": "pnpm 12.15.0",
+      "url": "https://pnpm.io/blog/releases/12.15.0",
+      "published": "2026-10-21T00:00:00Z",
+      "preview": "This release lets pnpm-workspace.yaml delegate settings to other files and config dependencies with include, adds lockfile.integrityTarget: tar and tar-registry support, accepts zstd-compressed registry responses, and honors SOURCE_DATE_EPOCH in pnpm deploy and pnpm install. It also rejects...",
+      "source": "pnpm Blog",
+      "category": "JavaScript"
     },
     {
       "title": "44.172.2",
@@ -175,22 +279,6 @@
       "category": "Infrastructure"
     },
     {
-      "title": "44.171.8",
-      "url": "https://github.com/renovatebot/renovate/releases/tag/44.171.8",
-      "published": "2026-10-20T12:58:16Z",
-      "preview": "44.171.8 (2026-10-20) Bug Fixes vulnerabilities: apply vulnerabilityAlerts limits to packageRule alerts ( #47211 ) ( dc71c78 ) Build System deps: update dependency google-auth-library to v11.3.0 (main) ( #47213 ) ( 85acb08 )",
-      "source": "Renovate releases",
-      "category": "Infrastructure"
-    },
-    {
-      "title": "44.171.7",
-      "url": "https://github.com/renovatebot/renovate/releases/tag/44.171.7",
-      "published": "2026-10-20T12:02:43Z",
-      "preview": "44.171.7 (2026-10-20) Bug Fixes deps: update renovate-base-image to v13.135.3 (main) ( #47210 ) ( fce3625 )",
-      "source": "Renovate releases",
-      "category": "Infrastructure"
-    },
-    {
       "title": "vlt skills",
       "url": "https://vlt.io/blog/vlt-skills",
       "published": "2026-10-20T12:00:00Z",
@@ -279,6 +367,14 @@
       "category": "Python"
     },
     {
+      "title": "Announcing rustup 1.29.2",
+      "url": "https://blog.rust-lang.org/2026/10/20/Rustup-1.29.2/",
+      "published": "2026-10-20T00:00:00Z",
+      "preview": "The rustup team is happy to announce the release of rustup version 1.29.2. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's new in rustup 1.29.2 This is a small release which only updates the rustls-webpki and webpki-root-certs dependencies to address the problematic eMudhra intermediate certificates issue described in CVE-2026-111943 . See also RUSTSEC-2026-0382 . Further details are available in the changelog ! How to update If you have a previous version of rustup installed, getting the new one is",
+      "source": "Rust Blog",
+      "category": "Rust"
+    },
+    {
       "title": "8.1.0.14",
       "url": "https://github.com/NuGet/NuGet.Client/releases/tag/8.1.0.14",
       "published": "2026-10-19T23:36:24Z",
@@ -349,14 +445,6 @@
       "preview": "Changelog d6e7b58 bump: tag and release ORAS CLI v1.3.5 ( #2244 ) 4431829 docs: require cve fixes to land before preparing a release ( #2258 ) 8ee66ac docs: add ORAS CLI release process ( #2248 ) e09a8bb chore: bump oras-go to v2.6.4 in e2e tests ( #2247 ) 8270f5f chore: update oras-go to v2.6.4 ( #2242 ) ba3a3dc fix: validate extra destination tags before pushing ( #2237 ) 6ca02d0 build(deps): bump the github-actions group across 1 directory with 3 updates ( #2240 ) c9ccd95 build(deps): bump library/golang from 1.27.1-alpine to 1.27.2-alpine ( #2239 ) b2dc645 build(deps): bump github.com/onsi",
       "source": "ORAS releases",
       "category": "Containers"
-    },
-    {
-      "title": "cabal-head",
-      "url": "https://github.com/haskell/cabal/releases/tag/cabal-head",
-      "published": "2026-10-18T22:00:09Z",
-      "preview": "No release body provided.",
-      "source": "Cabal releases",
-      "category": "Registries"
     },
     {
       "title": "1.18.4",
@@ -1111,14 +1199,6 @@
       "category": "JavaScript"
     },
     {
-      "title": "pnpr 0.1.0-alpha.15",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/pnpr%400.1.0-alpha.15",
-      "published": "2026-10-10T12:35:55Z",
-      "preview": "pnpr 0.1.0-alpha.15 adds a web UI, admin APIs for package rules, teams, and accounts, and SCIM deprovisioning. It also carries a security fix for tokens that outlived their account. Minor Changes pnpr serves a web UI at /-/ui/ when the new @pnpm/pnpr-ui package is installed next to it, for example with pnpm add -g @pnpm/pnpr,@pnpm/pnpr-ui . The new ui setting turns the UI off or serves it from another directory. The web UI signs in with a password or with an OIDC provider that offers browser sign-in. pnpr lists those providers at GET /-/pnpr/v0/sign-in . A browser sign-in started with /-/oidc/",
-      "source": "pnpm releases",
-      "category": "JavaScript"
-    },
-    {
       "title": "8.1.0.5",
       "url": "https://github.com/NuGet/NuGet.Client/releases/tag/8.1.0.5",
       "published": "2026-10-10T12:34:36Z",
@@ -1199,28 +1279,12 @@
       "category": ".NET"
     },
     {
-      "title": "pnpm 12.11.1",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.11.1",
-      "published": "2026-10-09T12:28:20Z",
-      "preview": "This release fixes two ways pnpm install could fail, runs tools of any Rust release through pnx , and treats registry.npmjs.com as an alias of the npm registry. Patch Changes pnpm install no longer fails when packageManager pins the pnpm version that is already running and the registry does not publish that version. pnpm warns and continues. A registry mirror that has not synced a release no longer blocks the commands of a project pinned to it. pnpm install no longer fails with ERR_PNPM_CMD_SHIM_CHMOD when node_modules/.bin holds a shim that another user created, if everyone can already execut",
-      "source": "pnpm releases",
-      "category": "JavaScript"
-    },
-    {
       "title": "swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-07-a",
       "url": "https://github.com/swiftlang/swift-package-manager/releases/tag/swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-07-a",
       "published": "2026-10-09T09:03:31Z",
       "preview": "Tag build swift-6.4.x-DEVELOPMENT-SNAPSHOT-2026-10-07-a",
       "source": "Swift Package Manager releases",
       "category": "Registries"
-    },
-    {
-      "title": "pnpm 12.11.0",
-      "url": "https://github.com/pnpm/pnpm/releases/tag/v12.11.0",
-      "published": "2026-10-09T06:43:40Z",
-      "preview": "This release adds Rust toolchain management, links the agent skills that dependencies ship, adds the permissions setting, and keeps the colors of streamed script output. Minor Changes pnpm install now links the agent skills that direct dependencies ship under skills/<name>/SKILL.md into the project's agent skill directories, such as .claude/skills . A package's skills are linked only after you approve them with pnpm approve . The skills.dirs setting chooses the directories pnpm/rfcs#35 . Added the permissions setting, which records what each dependency may do. Its build capability works like a",
-      "source": "pnpm releases",
-      "category": "JavaScript"
     },
     {
       "title": "v2.15.4",
@@ -1461,14 +1525,6 @@
       "preview": "RubyGems Changes already released in 4.0.x are not repeated here. Features: Support content addressable gems in Gem::PackageTask . Pull request #9897 by Harriet Oughton, Gira Chawda and Jenny Shen Add --content-addressable to gem build and make --ruby-abi only set the Ruby ABI. Pull request #9906 by Harriet Oughton Enhancements: Drop setuid, setgid and sticky bits when extracting gems. Pull request #9929 by Hiroshi SHIBATA Improve handling of paths with invalid Windows characters. Pull request #9276 by Said Kaldybaev and Hiroshi SHIBATA Installs bundler 4.1.0.beta2 as a default gem. Breaking c",
       "source": "RubyGems releases",
       "category": "Ruby"
-    },
-    {
-      "title": "swift-DEVELOPMENT-SNAPSHOT-2026-10-06-a",
-      "url": "https://github.com/swiftlang/swift-package-manager/releases/tag/swift-DEVELOPMENT-SNAPSHOT-2026-10-06-a",
-      "published": "2026-10-08T03:19:02Z",
-      "preview": "Tag build swift-DEVELOPMENT-SNAPSHOT-2026-10-06-a",
-      "source": "Swift Package Manager releases",
-      "category": "Registries"
     },
     {
       "title": "Your Tool Has a New Reader",
@@ -2453,14 +2509,6 @@
       "preview": "What's Changed Reject redundant minimum macOS dependencies by @p-linnane in #24020 Avoid duplicate Caskroom loads in doctor by @joseph1020 in #24026 Fix historical loading and CPANSA fallback by @p-linnane in #24029 Type Style options instead of **options by @dduugg in #24025 Avoid repeated Cask rename migrations during update by @joseph1020 in #24031 Type Formulary options instead of **options by @dduugg in #24032 pypi: resolve non-PyPI sources missing from PyPI by @daeho-ro in #24036 shell: do not wrap an escaped value in double quotes by @rawsun007 in #24035 Allow --formula-list with --new-",
       "source": "Homebrew releases",
       "category": "System"
-    },
-    {
-      "title": "v10.2.0 🌈 Disable automatic cache saves for merge queues",
-      "url": "https://github.com/astral-sh/setup-uv/releases/tag/v10.2.0",
-      "published": "2026-09-21T13:15:15Z",
-      "preview": "Changes This release contains the known-checksum of the most recent uv releases and also disabled the uploading(saving) of the cache when in a merge queue since theses caches would almost never be used. 🚀 Enhancements Disable automatic cache saves for merge queues @eifinger ( #1056 ) 🧰 Maintenance chore: update known checksums for 0.12.17 @ github-actions[bot] ( #1058 ) chore: update known checksums for 0.12.16 @ github-actions[bot] ( #1057 ) chore: update known checksums for 0.12.15 @ github-actions[bot] ( #1054 ) chore: update known checksums for 0.12.14 @ github-actions[bot] ( #1053 ) chore",
-      "source": "setup-uv releases",
-      "category": "Python"
     }
   ]
 }
